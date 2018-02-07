@@ -37,7 +37,7 @@ public:
 int main()
 {
     Shape &shape = Circle();
-    //这里最终会调用Circle::Draw()，也就是说，C++中private成员函数也可以是虚函数，并且有多态性为
+    //这里最终会调用Circle::Draw()，也就是说，C++中private成员函数也可以是虚函数，并且有多态行为
     shape.Invalid();
     
     Circle circle;
